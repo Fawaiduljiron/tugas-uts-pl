@@ -1,192 +1,63 @@
-import { View, Text, TouchableOpacity } from "react-native";
-import React from "react";
+import { View, Text, Image, TouchableOpacity } from 'react-native'
+import { StatusBar } from 'expo-status-bar'
+import React from 'react'
 
 const index = () => {
   return (
-    <View>
-      <Text
-        style={{
-          fontSize: 25,
-          fontWeight: "bold",
-        }}
-      >
-        Absensi Guru
-      </Text>
-      <View
-        style={{
-          width: 320,
-          height: 70,
-          backgroundColor: "#d7dbdb",
-          borderRadius: 10,
-          marginHorizontal: "auto",
-          marginTop: 20,
-        }}
-      >
-        <Text
-          style={{
-            fontSize: 17,
-            marginVertical: 17,
-            marginLeft: 10,
-            flexDirection: "column",
-          }}
-        >
-          Royhan S.kom
+    <View style={{
+      backgroundColor:'#42c8f5',
+      flex :1
+    }}>
+      <StatusBar style='auto'/>
+      <View style={{
+        marginHorizontal:80,
+        marginVertical: 90,
+      }}>
+        <Image source={require('../assets/images/1.png')}
+        style = {{
+          width: 200,
+          height:200,
+        }}/>
+        <Text style={{
+          fontSize:23,
+          marginHorizontal:45
+        }}>
+          ABSENSI
         </Text>
-        <View
-          style={{
-            flex: 1,
-            flexDirection: "row",
-          }}
-        >
-          <TouchableOpacity
-            style={{
-              marginLeft: 160,
-              marginTop: -35,
-              borderRadius: 10,
-            }}
-          >
-            <Text>Tidak Hadir</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              width: 70,
-              height: 30,
-              backgroundColor: "#42c8f5",
-              marginTop: -40,
-              marginLeft: 10,
-              borderRadius: 10,
-            }}
-          >
-            <Text
-              style={{
-                textAlign: "center",
-                marginVertical: "auto",
-                color: "white",
-              }}
-            >
-              Hadir
-            </Text>
-          </TouchableOpacity>
-        </View>
+        <Text style={{
+          fontSize:15,
+          marginHorizontal:65
+          }}>
+          ONLINE
+        </Text>
       </View>
-
-      <View
-        style={{
-          width: 320,
-          height: 70,
-          backgroundColor: "#d7dbdb",
-          borderRadius: 10,
-          marginHorizontal: "auto",
-          marginTop: 20,
-        }}
-      >
-        <Text
-          style={{
-            fontSize: 17,
-            marginVertical: 17,
-            marginLeft: 10,
-            flexDirection: "column",
-          }}
-        >
-          Nauval S.kom
-        </Text>
-        <View
-          style={{
-            flex: 1,
-            flexDirection: "row",
-          }}
-        >
-          <TouchableOpacity
-            style={{
-              marginLeft: 160,
-              marginTop: -35,
-              borderRadius: 10,
-            }}
-          >
-            <Text>Tidak Hadir</Text>
+      <View style={{
+        flex:1,
+        flexDirection:'row',
+        marginTop:170
+      }}>
+          <TouchableOpacity style={{
+            width:250,
+            height:50,
+            backgroundColor:'white',
+            borderRadius:10,
+            marginLeft:15,
+          }}>
+            <Text style={{
+              textAlign:'center',
+              marginTop:15,
+            }}>Log In</Text>
           </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              width: 70,
-              height: 30,
-              backgroundColor: "#42c8f5",
-              marginTop: -40,
-              marginLeft: 10,
-              borderRadius: 10,
-            }}
-          >
-            <Text
-              style={{
-                textAlign: "center",
-                marginVertical: "auto",
-                color: "white",
-              }}
-            >
-              Hadir
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-
-      <View
-        style={{
-          width: 320,
-          height: 70,
-          backgroundColor: "#d7dbdb",
-          borderRadius: 10,
-          marginHorizontal: "auto",
-          marginTop: 20,
-        }}
-      >
-        <Text
-          style={{
-            fontSize: 17,
-            marginVertical: 17,
-            marginLeft: 10,
-            flexDirection: "column",
-          }}
-        >
-          Ajay S.kom
-        </Text>
-        <View
-          style={{
-            flex: 1,
-            flexDirection: "row",
-          }}
-        >
-          <TouchableOpacity
-            style={{
-              marginLeft: 160,
-              marginTop: -35,
-              borderRadius: 10,
-            }}
-          >
-            <Text>Tidak Hadir</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              width: 70,
-              height: 30,
-              backgroundColor: "#42c8f5",
-              marginTop: -40,
-              marginLeft: 10,
-              borderRadius: 10,
-            }}
-          >
-            <Text
-              style={{
-                textAlign: "center",
-                marginVertical: "auto",
-                color: "white",
-              }}
-            >
-              Hadir
-            </Text>
-          </TouchableOpacity>
-        </View>
+          <TouchableOpacity style={{
+            width:50,
+            height:50,
+            borderRadius:10,
+            marginLeft:20,
+            backgroundColor:'white'
+          }}></TouchableOpacity>
       </View>
     </View>
-  );
-};
+  )
+}
 
-export default index;
+export default index
